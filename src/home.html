@@ -8,27 +8,26 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+  <link href="/dist/output.css" rel="stylesheet">
   </head>
   <body>
     <!-- home page for portfolio website -->
     <!-- nav bar -->
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+    <header class="bg-gray-800 bg-opacity-75 justify-between p-2 text-white sticky top-0 z-10 md:flex md:justify-between md:items-center md:pr-10">
+      <div class="flex justify-between items-center px-2 font-bold">
+        <div class="flex justify-between items-center gap-[10px]">
+          <img class="h-12 w-12 rounded-full" src="images/profile.jpg" alt="Tamiru Alemnew" />
+          <p class="whitespace-nowrap text-sm md:text-lg">Tamiru Alemnew</p>
         </div>
 
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars inline-block lg:hidden"></i>
       </div>
       <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
+        <ul class="lg:flex lg:flex-row flex-col justify-around list-none gap-[20px] hidden">
+          <li class="hover:text-gray-300"><a href="about.html">About Me</a></li>
+          <li class="hover:text-gray-300"><a href="projects.html">Projects</a></li>
+          <li class="hover:text-gray-300"><a href="contact.html">Contact Me</a></li>
+          <li class="hover:text-gray-300"><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
     </header>
@@ -36,16 +35,16 @@
     <main>
       <!-- hero section -->
       
-      <section class="hero">
+      <section class="p-4 md:flex flex-row-reverse justify-center items-center md:gap-[40px]">
         <img
-          class="hero__image"
+          class="rounded-lg shadow-lg transform hover:scale-105 w-full md:w-1/3"
           src="images/profile.jpg"
           alt="Tamiru Alemnew"
         />
         
-        <div class="hero__text">
-          <h2 id="name"></h2>
-          <h4 id="typewriter-text"></h4>
+        <div class="md:w-[60%] md:p-[30px]">
+          <h2 id="name" class="font-bold"></h2>
+          <h4 id="typewriter-text" class="font-bold"></h4>
           <p>
             Welcome to my portfolio! Here you can learn more about my skills,
             check out my resume, and see some of the projects I've worked on.
@@ -56,53 +55,53 @@
       </section>
 
       <!-- skills section -->
-      <section id="techstack">
-        <h2>Skills</h2>
-        <div class="techstack__list ">
-          <div class="techstack__item">
-            <img src="images/html.png" alt="HTML" />
+      <section id="techstack" class="bg-gray-800 p-16 flex flex-col justify-center items-center">
+        <h class="text-white font-bold text-lg">Skills</h2>
+        <div class="flex w-[90vw] overflow-x-auto whitespace-nowrap gap-[30px] mx-5 my-0 p-5">
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/html.png" alt="HTML" />
             <h3>HTML</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/css.png" alt="CSS" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-white p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/css.png" alt="CSS" />
             <h3>CSS</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/javaScript.png" alt="JavaScript" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-cover transition-transform duration-[0.2s] rounded-[10px]" src="images/javaScript.png" alt="JavaScript" />
             <h3>JavaScript</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/mongodb.png" alt="MongoDB" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/mongodb.png" alt="MongoDB" />
             <h3>MongoDB</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/express.png" alt="Express.js" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/express.png" alt="Express.js" />
             <h3>Express.js</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/react.png" alt="React" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/react.png" alt="React" />
             <h3>React</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/node.png" alt="Node.js" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-fill transition-transform duration-[0.2s] rounded-[10px]" src="images/node.png" alt="Node.js" />
             <h3>Node.js</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/java.png" alt="Java" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-cover transition-transform duration-[0.2s] rounded-[10px]" src="images/java.png" alt="Java" />
             <h3>Java</h3>
           </div>
-          <div class="techstack__item">
-            <img src="images/python.jpg" alt="Python" />
+          <div class="flex-[0_0_auto] flex flex-col items-center bg-[white] p-5 rounded-[20px]">
+            <img class="w-[200px] h-[200px] object-cover transition-transform duration-[0.2s] rounded-[10px]" src="images/python.jpg" alt="Python" />
             <h3>Python</h3>
           </div>
         </div>
         
       </section>
-      <div class="soft-skills">
-        <h4>Soft Skills</h4>
-        <div class="soft-skills__list">
-          <div class="soft-skills__group1">
-            <div class="skill-set">
+      <div class="p-[20px] flex flex-col items-center">
+        <h4 class="font-bold text-center">Soft Skills</h4>
+        <div class="flex flex-col gap-7 justify-around max-w-[900px]">
+          <div class="flex gap-7 justify-between ">
+            <div class="p-4 shadow-lg m-6">
               <h5>Communication</h5>
               <ul>
                 <li>Verbal Communication</li>
@@ -111,7 +110,7 @@
                 <li>Listening Skills</li>
               </ul>
             </div>
-            <div class="skill-set">
+            <div class="p-4 shadow-lg m-6">
               <h5>Teamwork</h5>
               <ul>
                 <li>Collaboration</li>
@@ -120,7 +119,7 @@
                 <li>Reliability</li>
               </ul>
             </div>
-            <div class="skill-set hidden">
+            <div class="p-4 shadow-lg  md:block m-6">
               <h5>Adaptability</h5>
               <ul>
                 <li>Flexibility</li>
@@ -130,8 +129,8 @@
               </ul>
             </div>
           </div>
-          <div class="soft-skills__group2">
-            <div class="skill-set">
+          <div class="flex gap-7 justify-between">
+            <div class="p-4 shadow-lg m-6">
               <h5>Problem Solving</h5>
               <ul>
                 <li>Critical Thinking</li>
@@ -141,7 +140,7 @@
               </ul>
             </div>
 
-            <div class="skill-set">
+            <div class="p-4 shadow-lg m-6">
               <h5>Work Ethic</h5>
               <ul>
                 <li>Responsibility</li>
@@ -150,7 +149,7 @@
                 <li>Self-Motivation</li>
               </ul>
             </div>
-            <div class="skill-set hidden">
+            <div class="p-4 shadow-lg w-[600px]">
               <h5>Time Management</h5>
               <ul>
                 <li>Task Prioritization</li>
@@ -201,17 +200,17 @@
           </div>
         </div>
       </section> -->
-      <section class="resume">
-        <h2>Resume</h2>
-        <div class="resume__content resume__content-home">
+      <section class="flex flex-col justify-center items-center h-auto bg-[rgb(49,48,47)] mt-5 mb-0 mx-0">
+        <h2 class="text-white text-xl font-bold">Resume</h2>
+        <div class="m-auto overflow-x-hidden">
           
-          <div class="resume__text row">
-            <div class="resume__text-item">
-              <h3>Education</h3>
+          <div class="flex overflow-x-auto gap-5 w-[90vw] bg-[white] p-[30px] rounded-[20px]">
+            <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
+              <h3 >Education</h3>
               <h4>Bachelor of Science in Software Engineering</h4>
               <h5>Addis Ababa University</h5>
               <p>2021 - 2026</p>
-              <p>
+              <p class="whitespace-break-spaces">
                 During my time at Addis Ababa University, I gained a solid
                 foundation in computer science principles. I took courses in
                 data structures, algorithms, software engineering, and web
@@ -220,7 +219,7 @@
                 class.
               </p>
             </div>
-            <div class="resume__text-item">
+            <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
               <h4>Full Stack Web Development</h4>
               <p>FreeCodeCamp</p>
               <p>2023 - 2023</p>
@@ -233,7 +232,7 @@
                 practical experience in full stack web development.
               </p>
             </div>
-            <div class="resume__text-item">
+            <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
               <h4>Software Engineering Intern</h4>
               <h5>Africa to Silicon Valley (A2SV)</h5>
               <p>2022 - Present</p>
@@ -250,7 +249,7 @@
               </p>
             </div>
 
-            <div class="resume__text-item">
+            <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
               <h3>Experience</h3>
               <h4>Software Engineer</h4>
               <p>Arez Armada</p>
@@ -266,7 +265,7 @@
                 efficient application logic.
               </p>
             </div>
-            <div class="resume__text-item">
+            <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
               <h4>Back-End Developer</h4>
               <h5>4K Labs</h5>
               <p>2023 - Present</p>
@@ -286,70 +285,70 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <nav class="footer__navigation">
+ <footer class="flex flex-col justify-between items-center bg-[#212529] p-5 md:grid md:grid-cols-2 md:items-baseline md:px-20 md:py-5">
+      <nav class="flex items-baseline justify-around">
         <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
+          <span class="text-white text-xl font-semibold">About Me</span>
+          <p class="text-[#8c8f92]">
             I'm a software developer skilled in multiple languages and
             frameworks. I enjoy problem-solving and continuously strive to
             improve my skills.
           </p>
         </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
+        <ul class="flex flex-col items-center mr-10">
+            <li><span class="text-white text-xl font-semibold">Portfolio</span></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="home.html">Home</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="about.html">About Me</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="projects.html">Projects</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="contact.html">Contact Me</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="resume.html">Resume</a></li>
         </ul>
       </nav>
 
-    <div class="footer__navigation2">
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
+    <div class="flex items-baseline justify-around">
+      <div class="text-center">
+        <ul class="flex flex-col items-center gap-2.5 mr-10 mt-[30px]  md:flex-wrap">
           <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
               ><i class="fab fa-facebook"></i
             ></a>
           </li>
           <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
           <li class="footer__icon">
             <a
+            class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]"
               href="https://www.linkedin.com/in/Tamiru-Alemnew/"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
           <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://github.com/Tamiru-Alemnew" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </li>
         </ul>
       </div>
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
+      <address class="flex flex-col items-center text-[#6c757d] gap-[15px]">
+        <span class="text-lg text-white font-semibold whitespace-nowrap"> Contact</span>
+        
+        <span class="whitespace-nowrap">Gerji, Addis Ababa Ethiopia</span>
         <span
+        class="whitespace-nowrap"
           ><i class="fas fa-phone"></i>
           <a class="phone" href="tel:+251943045904">+251943045904</a></span
         >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+        <span class="whitespace-nowrap"> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
       </address>
       </div>
       
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
+      <p class="h-5 w-full text-white tracking-[1px] text-center">Copywrite &copy; 2023 Tamiru Alemnew</p>
     </footer>
+
     <script src="./script/script.js"></script>
   </body>
 </html>

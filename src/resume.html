@@ -7,38 +7,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+      <link href="/dist/output.css" rel="stylesheet">
     <title>Resume</title>
   </head>
   <body>
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+    <header class="bg-gray-800 bg-opacity-75 justify-between p-2 text-white sticky top-0 z-10 md:flex md:justify-between md:items-center md:pr-10">
+      <div class="flex justify-between items-center px-2 font-bold">
+        <div class="flex justify-between items-center gap-[10px]">
+          <img class="h-12 w-12 rounded-full" src="images/profile.jpg" alt="Tamiru Alemnew" />
+          <p class="whitespace-nowrap text-sm md:text-lg">Tamiru Alemnew</p>
         </div>
 
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars inline-block lg:hidden"></i>
       </div>
       <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
+        <ul class="lg:flex lg:flex-row flex-col justify-around list-none gap-[20px] hidden">
+          <li class="hover:text-gray-300"><a href="about.html">About Me</a></li>
+          <li class="hover:text-gray-300"><a href="projects.html">Projects</a></li>
+          <li class="hover:text-gray-300"><a href="contact.html">Contact Me</a></li>
+          <li class="hover:text-gray-300"><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- resume page -->
-      <section class="resume">
-        <h2>Resume</h2>
-        <div class="resume__content">
-          <div class="resume__text">
+      <section >
+        <h2 class="text-[white] font-extrabold text-xl">Resume</h2>
+        <div class="m-auto">
+          <div class="flex flex-col gap-5 w-[90vw] bg-[white] p-[30px] rounded-[20px]">
             <h3>Formal Education</h3>
-            <div class="resume__text-items">
-              <div class="resume__text-item">
+            <div class="md:flex flex-row-reverse md:w-6/12">
+              <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
                 <h4>Bachelor of Science in Computer Science</h4>
                 <p>Addis Ababa University</p>
                 <p>2021 - present</p>
@@ -58,7 +57,7 @@
                   knowledge and practical skills necessary to tackle complex
                   problems and develop efficient solutions.
                 </p>
-                <p class="hidden">
+                <p class="hidden md:block">
                   Moreover, my education instilled in me a deep appreciation for
                   the importance of continuous learning in the field of computer
                   science. As technology evolves, I am committed to staying
@@ -70,8 +69,8 @@
             </div>
 
             <h3>Informal Education</h3>
-            <div class="informal-education">
-              <div class="informal-education__item resume__text-item">
+            <div class="flex justify-around items-center gap-5 mx-0 my-5">
+              <div class=" flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
                 <h4>Full Stack Web Development</h4>
                 <p>FreeCodeCamp</p>
                 <p>2023 - 2023</p>
@@ -91,7 +90,7 @@
                   of front-end and back-end technologies, and gain hands-on
                   experience through project-based learning.
                 </p>
-                <p class="hidden">
+                <p class="hidden md:block">
                   With a strong foundation in computer science and a passion for
                   web development, I am committed to creating efficient,
                   user-friendly web applications. My experience spans multiple
@@ -102,8 +101,8 @@
                 </p>
               </div>
             </div>
-            <div class="informal-education">
-              <div class="informal-education__item resume__text-item">
+            <div class="flex justify-around items-center gap-5 mx-0 my-5">
+              <div class="flex-[0_0_auto] w-[300px] shadow-[4px_4px_6px_#d9d9d9,-4px_-4px_6px_#d9d9d9] mx-0 my-[5px] p-5 rounded-[22px]">
                 <h4>Software Engineering Intern</h4>
                 <h5>Africa to Silicon Valley (A2SV)</h5>
                 <p>2023 - Present</p>
@@ -127,7 +126,7 @@
                   experience has been instrumental in my growth as a software
                   engineer.
                 </p>
-                <p class="hidden">
+                <p class="hidden md:block">
                   As a dedicated software developer, I have honed my skills in a
                   variety of programming languages and frameworks. My experience
                   includes working with JavaScript, Python, React, and Node.js,
@@ -140,9 +139,9 @@
             </div>
             <div>
               <h4>skills</h4>
-              <div class="soft-skills__list">
-                <div class="soft-skills__group1">
-                  <div class="skill-set">
+              <div class="flex flex-col gap-5 justify-center">
+                <div class="flex justify-between text-[black]">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px]">
                     <h5>Front-End Development</h5>
                     <ul>
                       <li>HTML</li>
@@ -151,14 +150,14 @@
                       <li>React</li>
                     </ul>
                   </div>
-                  <div class="skill-set">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px]">
                     <h5>Database</h5>
                     <ul>
                       <li>MongoDB</li>
                       <li>MySQL</li>
                     </ul>
                   </div>
-                  <div class="skill-set hidden">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px] hidden md:block">
                     <h5>Soft Skills</h5>
                     <ul>
                       <li>Effective Communication</li>
@@ -166,8 +165,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="soft-skills__group2">
-                  <div class="skill-set">
+                <div class="flex justify-between text-[black]">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px]">
                     <h5>
                       <h5>Back-End Development</h5>
                       <ul>
@@ -178,7 +177,7 @@
                     </h5>
                   </div>
 
-                  <div class="skill-set">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px]">
                     <h5>Other</h5>
                     <ul>
                       <li>Git</li>
@@ -187,7 +186,7 @@
                       <li>Teamwork</li>
                     </ul>
                   </div>
-                  <div class="skill-set hidden">
+                  <div class="w-[150px] bg-[white] shadow-[8px_8px_6px_#d4cdcd,-8px_-8px_6px_#d4cdcd] p-[5px] rounded-[15px] rounded-[10px] hidden md:block">
                     <h5>Frontend Frameworks</h5>
                     <ul>
                       <li>Tailwind CSS</li>
@@ -201,69 +200,68 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
+ <footer class="flex flex-col justify-between items-center bg-[#212529] p-5 md:grid md:grid-cols-2 md:items-baseline md:px-20 md:py-5">
+      <nav class="flex items-baseline justify-around">
+        <div class="">
+          <span class="text-white text-xl font-semibold">About Me</span>
+          <p class="text-[#8c8f92]">
             I'm a software developer skilled in multiple languages and
             frameworks. I enjoy problem-solving and continuously strive to
             improve my skills.
           </p>
         </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
+        <ul class="flex flex-col items-center mr-10">
+            <li><span class="text-white text-xl font-semibold">Portfolio</span></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="home.html">Home</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="about.html">About Me</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="projects.html">Projects</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="contact.html">Contact Me</a></li>
+            <li><a class="whitespace-nowrap text-[#8c8f92]" href="resume.html">Resume</a></li>
         </ul>
       </nav>
 
-    <div class="footer__navigation2">
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
+    <div class="flex items-baseline justify-around">
+      <div class="text-center">
+        <ul class="flex flex-col items-center gap-2.5 mr-10 mt-[30px]  md:flex-wrap">
           <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
               ><i class="fab fa-facebook"></i
             ></a>
           </li>
           <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
           <li class="footer__icon">
             <a
+            class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]"
               href="https://www.linkedin.com/in/Tamiru-Alemnew/"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
           <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
+            <a class="text-xl leading-10 block w-10 h-10 transition-all duration-[0.3s] text-white bg-[#1a1d20] rounded-[100%]" href="https://github.com/Tamiru-Alemnew" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </li>
         </ul>
       </div>
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
+      <address class="flex flex-col items-center text-[#6c757d] gap-[15px]">
+        <span class="text-lg text-white font-semibold whitespace-nowrap"> Contact</span>
+        
+        <span class="whitespace-nowrap">Gerji, Addis Ababa Ethiopia</span>
         <span
+        class="whitespace-nowrap"
           ><i class="fas fa-phone"></i>
           <a class="phone" href="tel:+251943045904">+251943045904</a></span
         >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+        <span class="whitespace-nowrap"> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
       </address>
       </div>
       
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
+      <p class="h-5 w-full text-white tracking-[1px] text-center">Copywrite &copy; 2023 Tamiru Alemnew</p>
     </footer>
        <script src="./script/script.js"></script>
   </body>
